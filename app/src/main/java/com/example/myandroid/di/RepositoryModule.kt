@@ -15,7 +15,7 @@ val repositoryModule = module {
     single<SharedPreferencesRepository> {
         SharedPreferencesRepositoryImpl(
             prefs = get(),
-            encyptedPrefs = get(named(ENCRYPTED_PREFS))
+            encryptedPrefs = get(named(ENCRYPTED_PREFS))
         )
     }
 }

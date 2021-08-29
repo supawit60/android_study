@@ -38,7 +38,7 @@ class CovidViewModel constructor(
                 .collect {
 //                    Log.d(tag, "flow collect: $it")
                     // TODO: reverse list
-                    _displayTimeLineCases.postValue(it)
+                    _displayTimeLineCases.postValue(it.reversed())
                 }
         }
     }

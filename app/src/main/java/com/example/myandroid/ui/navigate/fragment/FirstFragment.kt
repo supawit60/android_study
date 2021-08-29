@@ -9,9 +9,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.myandroid.R
 import com.example.myandroid.databinding.FragmentFirstBinding
 import com.example.myandroid.model.SecondModel
-import com.example.myandroid.ui.base.BaseFragement
+import com.example.myandroid.ui.base.BaseFragment
 
-class FirstFragment : BaseFragement() {
+class FirstFragment : BaseFragment() {
 
     private val binding get() = _binding as FragmentFirstBinding
 

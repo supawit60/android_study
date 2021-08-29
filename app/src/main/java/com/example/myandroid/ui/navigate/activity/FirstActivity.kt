@@ -23,7 +23,6 @@ class FirstActivity : BaseActivity() {
 
     private fun setUpView() {
         setTitle(R.string.title_first_activity)
-
         binding.btnNextForResult.setOnClickListener {
             val name = binding.edtName.text.toString()
             navigateToSecondForResult(SecondModel(name = name))

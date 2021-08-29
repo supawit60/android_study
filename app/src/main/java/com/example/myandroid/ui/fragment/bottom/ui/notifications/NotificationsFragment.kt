@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.myandroid.databinding.FragmentNotificationsBinding
-import com.example.myandroid.ui.base.BaseFragement
+import com.example.myandroid.ui.base.BaseFragment
 
-class NotificationsFragment : BaseFragement() {
+class NotificationsFragment : BaseFragment() {
 
     private lateinit var notificationsViewModel: NotificationsViewModel
 

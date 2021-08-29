@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.myandroid.R
 import com.example.myandroid.databinding.FragmentThirdBinding
-import com.example.myandroid.ui.base.BaseFragement
+import com.example.myandroid.ui.base.BaseFragment
 
-class ThirdFragment : BaseFragement() {
+class ThirdFragment : BaseFragment() {
 
     private val binding get() = _binding as FragmentThirdBinding
 
@@ -28,6 +28,7 @@ class ThirdFragment : BaseFragement() {
         activity?.setTitle(R.string.title_third_fragment)
         binding.btnDone.setOnClickListener {
             // TODO
+//            activity?.finish()
         }
     }
 }

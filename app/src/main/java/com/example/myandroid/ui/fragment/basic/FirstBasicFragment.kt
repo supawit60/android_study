@@ -10,10 +10,10 @@ import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import com.example.myandroid.R
 import com.example.myandroid.databinding.FragmentFirstBinding
-import com.example.myandroid.ui.base.BaseFragement
+import com.example.myandroid.ui.base.BaseFragment
 import com.example.myandroid.model.SecondModel
 
-class FirstBasicFragment : BaseFragement() {
+class FirstBasicFragment : BaseFragment() {
 
     private val binding get() = _binding as FragmentFirstBinding
 

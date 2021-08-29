@@ -10,12 +10,12 @@ import org.koin.dsl.module
 const val ENCRYPTED_PREFS = "encrypted_prefs"
 
 private const val MY_SHARED_PREFERENCES = "my_shared_preferences"
-private const val MY_ENCRPTED_SHARED_PREFERENCES = "my_encrpted_shared_preferences"
+private const val MY_ENCRYPTED_SHARED_PREFERENCES = "my_encrypted_shared_preferences"
 
 val sharedPreferencesModule = module {
     single { initSharedPreferences(get(), MY_SHARED_PREFERENCES) }
     single(named(ENCRYPTED_PREFS)) {
-        initEncryptedSharedPreferences(get(), MY_ENCRPTED_SHARED_PREFERENCES)
+        initEncryptedSharedPreferences(get(), MY_ENCRYPTED_SHARED_PREFERENCES)
     }
 }
 

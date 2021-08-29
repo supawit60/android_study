@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import com.example.myandroid.databinding.FragmentDashboardBinding
-import com.example.myandroid.ui.base.BaseFragement
+import com.example.myandroid.ui.base.BaseFragment
 
-class DashboardFragment : BaseFragement() {
+class DashboardFragment : BaseFragment() {
 
     private lateinit var dashboardViewModel: DashboardViewModel
 

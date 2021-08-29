@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 
-open class BaseFragement : Fragment() {
+open class BaseFragment : Fragment() {
 
     val logTag: String
         get() = this::class.java.simpleName

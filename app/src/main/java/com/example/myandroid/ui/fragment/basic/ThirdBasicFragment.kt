@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.myandroid.databinding.FragmentThirdBinding
-import com.example.myandroid.ui.base.BaseFragement
+import com.example.myandroid.ui.base.BaseFragment
 
-class ThirdBasicFragment : BaseFragement() {
+class ThirdBasicFragment : BaseFragment() {
 
     private val binding get() = _binding as FragmentThirdBinding
 
@@ -25,7 +25,7 @@ class ThirdBasicFragment : BaseFragement() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnDone.setOnClickListener {
-            // TODO
+            activity?.finish()
         }
     }
 }

@@ -4,7 +4,7 @@ import android.content.SharedPreferences
 
 class SharedPreferencesRepositoryImpl constructor(
     private val prefs: SharedPreferences,
-    private val encyptedPrefs: SharedPreferences,
+    private val encryptedPrefs: SharedPreferences,
 ) : SharedPreferencesRepository {
 
     override var saveNormal: String?
@@ -18,12 +18,12 @@ class SharedPreferencesRepositoryImpl constructor(
         }
 
     override var saveWithEncrypted: String?
-        get() = encyptedPrefs.getString(KEY_SAVE_WITH_ENCRYPTED, "")
+        get() = encryptedPrefs.getString(KEY_SAVE_WITH_ENCRYPTED, "")
         set(value) {
             if (value == null) {
-                encyptedPrefs.edit().remove(KEY_SAVE_WITH_ENCRYPTED).apply()
+                encryptedPrefs.edit().remove(KEY_SAVE_WITH_ENCRYPTED).apply()
             } else {
-                encyptedPrefs.edit().putString(KEY_SAVE_WITH_ENCRYPTED, value).apply()
+                encryptedPrefs.edit().putString(KEY_SAVE_WITH_ENCRYPTED, value).apply()
             }
         }
 

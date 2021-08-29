@@ -35,7 +35,7 @@ android {
 
     productFlavors {
         ui {
-            buildConfigField "String", "BASE_URL", '\"https://LOCAL_IP:7443\"'
+            buildConfigField "String", "BASE_URL", '\" http://192.168.1.110:8080\"'
             applicationIdSuffix ".ui"
         }
         dev {
